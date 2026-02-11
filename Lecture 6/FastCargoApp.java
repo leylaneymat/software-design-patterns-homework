@@ -1,25 +1,15 @@
-package az.edu.ada.modules.module02.lecture06;
-
 public class FastCargoApp {
 
-    public void deliver(String[] args) {
-
-        //...
-
-        Truck truck = new Truck();
-
-        //...
-
-        Truck truck1 = new Truck();
-
-        // N = 100
-        //...
-
+    public static void main(String[] args) {
         String type = "SEA";
+        Logistics logistics;
+
         if (type.equals("SEA")) {
-            // new Ship();
-        } else if (type.equals("TRUCK")) {
-            // new Truck();
+            logistics = new SeaLogistics();
+        } else {
+            logistics = new RoadLogistics();
         }
+
+        logistics.planDelivery();
     }
 }

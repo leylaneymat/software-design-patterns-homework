@@ -1,8 +1,13 @@
-package az.edu.ada.modules.module02.lecture06;
-
-public class Truck {
+public class Truck implements Transport {
 
     private String id;
 
-    // ...
+    public Truck(String id) {
+        this.id = id;
+    }
+
+    @Override
+    public void deliver() {
+        System.out.println("Delivery by TRUCK | id=" + id);
+    }
 }
