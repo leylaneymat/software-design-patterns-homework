@@ -1,3 +1,4 @@
+package Homework;
 public class FastCargoApp {
 
     public static void main(String[] args) {

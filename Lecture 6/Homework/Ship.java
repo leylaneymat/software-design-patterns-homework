@@ -1,3 +1,4 @@
+package Homework;
 public class Ship implements Transport {
 
     private String id;

@@ -1,3 +1,4 @@
+package Homework;
 public class Truck implements Transport {
 
     private String id;
