@@ -1,19 +1,20 @@
 package lecture07;
-import lecture07.Element.Button;
-import lecture07.Element.Checkbox;
 
 public class Application {
-
-    private Button button;
-    private Checkbox checkbox;
+    private final GUIFactory factory;
 
     public Application(GUIFactory factory) {
-        this.button = factory.createButton();
-        this.checkbox = factory.createCheckbox();
+        this.factory = factory;
     }
 
-    public void paint() {
-        button.paint();
-        checkbox.paint();
+    public Window createSettingsWindow() {
+        return new WindowBuilder(factory)
+                .addTitle("J-Code settings")
+                .addCheckbox("Auto save")
+                .addCheckbox("Show line numbers")
+                .addProgressBar(40)
+                .addButton("Apply")
+                .addButton("Cancel")
+                .build();
     }
 }

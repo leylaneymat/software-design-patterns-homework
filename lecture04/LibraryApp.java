@@ -1,4 +1,4 @@
-package az.edu.ada.modules.module02.lecture04;
+package lecture04;
 
 public class LibraryApp {
 

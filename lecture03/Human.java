@@ -1,4 +1,4 @@
-package az.edu.ada.modules.module01.lecture03;
+package lecture03;
 
 public class Human {
 

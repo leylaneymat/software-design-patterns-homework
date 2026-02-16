@@ -1,4 +1,4 @@
-package az.edu.ada.modules.module03;
+package lecture05;
 
 public class Dragon implements Cloneable {
 
