@@ -1,5 +1,27 @@
 package lecture07;
-import static lecture07.Element.*;
+import static lecture07.Element.Button;
+import static lecture07.Element.Checkbox;
+import static lecture07.Element.LinuxDarkButton;
+import static lecture07.Element.LinuxDarkCheckbox;
+import static lecture07.Element.LinuxDarkProgressBar;
+import static lecture07.Element.LinuxLightButton;
+import static lecture07.Element.LinuxLightCheckbox;
+import static lecture07.Element.LinuxLightProgressBar;
+import static lecture07.Element.MacDarkButton;
+import static lecture07.Element.MacDarkCheckbox;
+import static lecture07.Element.MacDarkProgressBar;
+import static lecture07.Element.MacLightButton;
+import static lecture07.Element.MacLightCheckbox;
+import static lecture07.Element.MacLightProgressBar;
+import static lecture07.Element.ProgressBar;
+import static lecture07.Element.SimpleTitle;
+import static lecture07.Element.Title;
+import static lecture07.Element.WinDarkButton;
+import static lecture07.Element.WinDarkCheckbox;
+import static lecture07.Element.WinDarkProgressBar;
+import static lecture07.Element.WinLightButton;
+import static lecture07.Element.WinLightCheckbox;
+import static lecture07.Element.WinLightProgressBar;
 
 public interface GUIFactory {
 

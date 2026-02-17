@@ -23,8 +23,8 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>..</sourceDirectory>
-        <testSourceDirectory>..</testSourceDirectory>
+        <sourceDirectory>.</sourceDirectory>
+        <testSourceDirectory>.</testSourceDirectory>
 
         <plugins>
             <plugin>
@@ -32,7 +32,7 @@
                 <version>3.13.0</version>
                 <configuration>
                     <includes>
-                        <include>lecture07/**/*.java</include>
+                        <include>*.java</include>
                     </includes>
                     <excludes>
                         <exclude>**/UnitTest.java</exclude>
@@ -45,7 +45,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <includes>
-                        <include>lecture07/UnitTest.java</include>
+                        <include>**/UnitTest.java</include>
                     </includes>
                 </configuration>
             </plugin>
