@@ -1,0 +1,21 @@
+package omnihome.command;
+
+import omnihome.devices.SmartLights;
+
+public class TurnOnLightCommand implements Command {
+    private final SmartLights lights;
+
+    public TurnOnLightCommand(SmartLights lights) {
+        this.lights = lights;
+    }
+
+    @Override
+    public void execute() {
+        lights.turnOn();
+    }
+
+    @Override
+    public void undo() {
+        lights.turnOff();
+    }
+}
