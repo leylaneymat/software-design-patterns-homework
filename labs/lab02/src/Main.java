@@ -31,6 +31,9 @@ public class Main {
 
         motionSensor.detectMotion();
 
+        smartAlarm.setAlertStrategy("SIREN");
+        motionSensor.detectMotion();
+
         System.out.println();
         System.out.println("Smart Remote & Command Demo");
         SmartRemote remote = new SmartRemote(2);
