@@ -1,4 +1,4 @@
-package omnihome.strategy;
+package strategy;
 
 public class SilentPushStrategy implements AlertStrategy {
     @Override

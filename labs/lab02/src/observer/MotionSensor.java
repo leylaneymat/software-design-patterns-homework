@@ -1,4 +1,4 @@
-package omnihome.observer;
+package observer;
 
 import java.util.ArrayList;
 import java.util.List;

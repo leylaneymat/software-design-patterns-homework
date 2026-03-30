@@ -1,17 +1,15 @@
-package omnihome;
-
 import java.util.HashMap;
 import java.util.Map;
 
-import omnihome.command.ArmAlarmCommand;
-import omnihome.command.SmartRemote;
-import omnihome.command.TurnOnLightCommand;
-import omnihome.devices.SmartAlarm;
-import omnihome.devices.SmartLights;
-import omnihome.observer.MotionSensor;
-import omnihome.strategy.AlertStrategy;
-import omnihome.strategy.LoudSirenStrategy;
-import omnihome.strategy.SilentPushStrategy;
+import command.ArmAlarmCommand;
+import command.SmartRemote;
+import command.TurnOnLightCommand;
+import devices.SmartAlarm;
+import devices.SmartLights;
+import observer.MotionSensor;
+import strategy.AlertStrategy;
+import strategy.LoudSirenStrategy;
+import strategy.SilentPushStrategy;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package omnihome.command;
+package command;
 
-import omnihome.devices.SmartLights;
+import devices.SmartLights;
 
 public class TurnOnLightCommand implements Command {
     private final SmartLights lights;

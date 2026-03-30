@@ -1,9 +1,9 @@
-package omnihome.devices;
+package devices;
 
 import java.util.Map;
 
-import omnihome.observer.Observer;
-import omnihome.strategy.AlertStrategy;
+import observer.Observer;
+import strategy.AlertStrategy;
 
 public class SmartAlarm implements Observer {
     private final Map<String, AlertStrategy> alertRegistry;

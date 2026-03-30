@@ -1,6 +1,6 @@
-package omnihome.command;
+package command;
 
-import omnihome.devices.SmartAlarm;
+import devices.SmartAlarm;
 
 public class ArmAlarmCommand implements Command {
     private final SmartAlarm alarm;

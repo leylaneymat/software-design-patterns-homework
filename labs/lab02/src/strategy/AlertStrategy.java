@@ -1,4 +1,4 @@
-package omnihome.strategy;
+package strategy;
 
 public interface AlertStrategy {
     void executeAlert();

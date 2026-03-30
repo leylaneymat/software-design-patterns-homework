@@ -1,4 +1,4 @@
-package omnihome.command;
+package command;
 
 public interface Command {
     void execute();

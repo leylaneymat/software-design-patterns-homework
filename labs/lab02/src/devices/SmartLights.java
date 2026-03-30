@@ -1,6 +1,6 @@
-package omnihome.devices;
+package devices;
 
-import omnihome.observer.Observer;
+import observer.Observer;
 
 public class SmartLights implements Observer {
     private boolean on;

@@ -1,4 +1,4 @@
-package omnihome.observer;
+package observer;
 
 public interface Observer {
     void update();

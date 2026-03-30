@@ -1,4 +1,4 @@
-package omnihome.command;
+package command;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,5 +38,11 @@ public class SmartRemote {
         }
         lastCommand.undo();
         lastCommand = null;
+    }
+
+    private void validateSlot(int slot) {
+        if (slot < 0 || slot >= slots.size()) {
+            throw new IllegalArgumentException("Invalid remote slot: " + slot);
+        }
     }
 }
