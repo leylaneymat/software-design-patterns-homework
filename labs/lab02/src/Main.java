@@ -3,6 +3,9 @@ package omnihome;
 import java.util.HashMap;
 import java.util.Map;
 
+import omnihome.command.ArmAlarmCommand;
+import omnihome.command.SmartRemote;
+import omnihome.command.TurnOnLightCommand;
 import omnihome.devices.SmartAlarm;
 import omnihome.devices.SmartLights;
 import omnihome.observer.MotionSensor;
@@ -27,5 +30,16 @@ public class Main {
         motionSensor.addObserver(smartAlarm);
 
         motionSensor.detectMotion();
+
+        System.out.println();
+        System.out.println("Smart Remote & Command Demo");
+        SmartRemote remote = new SmartRemote(2);
+        remote.setCommand(0, new TurnOnLightCommand(smartLights));
+        remote.setCommand(1, new ArmAlarmCommand(smartAlarm));
+
+        smartAlarm.disarm();
+        remote.pressButton(0);
+        remote.pressButton(1);
+        remote.pressUndo();
     }
 }
